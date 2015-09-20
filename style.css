@@ -194,10 +194,14 @@ hr {
 		padding: 0 10px;
 	}
 
+	.post-page-title {
+		font-size: 54px;
+	}
+
 	.top-nav-bar {
 		width: 95%;
 	}
-	.flex-right, .flex-left {
+	.flex-right {
 		display: none;
 	}
 }
