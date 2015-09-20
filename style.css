@@ -24,6 +24,7 @@ h1 {
 	text-align: center;
 	font-weight: 800;
 	font-size: 64px;
+	display: inline-block;
 }
 
 hr {
@@ -45,6 +46,10 @@ hr {
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	user-select: none;          /* Likely future */  
+}
+
+.top-nav-bar-mobile {
+	display: none;
 }
 
 .menu-icon {
@@ -135,6 +140,7 @@ hr {
 	.post-container .post-title {
 		font-size: 32px;
 		font-weight: 600;
+		text-align: left;
 	}
 
 	.post-container .post-author {
@@ -196,12 +202,21 @@ hr {
 
 	.post-page-title {
 		font-size: 54px;
+		hyphens: auto;
 	}
 
 	.top-nav-bar {
 		width: 95%;
 	}
-	.flex-right {
+	.flex-right, .flex-left {
 		display: none;
+	}
+	.flex-center {
+		margin: 0 auto;
+	}
+
+	.top-nav-bar-mobile {
+		display: block;
+		padding: 20px 0 0 20px;
 	}
 }
