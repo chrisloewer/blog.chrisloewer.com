@@ -34,3 +34,8 @@ function insertTemplateParsed(elementId, templateName, json) {
   var template = Handlebars.templates[templateName];
   element.innerHTML = template(json);
 }
+
+function insertHeader(title) {
+  var data = {title: title};
+  insertTemplateParsed('_header', 'header', data);
+}

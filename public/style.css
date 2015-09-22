@@ -24,6 +24,7 @@ h1 {
   text-align: center;
   font-weight: 800;
   font-size: 64px;
+  text-transform: uppercase;
   display: inline-block;
 }
 
@@ -80,12 +81,13 @@ hr {
     background-color: #CCCCCC;
   }
 
-
+/* GENERAL */
 .body {
   width: 95%;
   margin: 0 auto;
 }
 
+/* HOME PAGE */
 .intro-block {
   display: inline-block;
   text-align: justify;
@@ -114,6 +116,7 @@ hr {
     font-size: 32px;
     font-weight: 600;
     text-align: left;
+    text-transform: uppercase;
   }
 
   .post-container .post-author {
@@ -122,22 +125,45 @@ hr {
     margin-bottom: 5px;
   }
 
-
-/*.post-page-title {
-  font-size: 54px;
+/* POST PAGE */
+.post-page-title {
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
   hyphens: auto;
 }
+.post-page-author {
+  font-weight: 300;
+  font-size: 24px;
+  font-style: italic;
+}
+
 .post-content {
   padding: 0 10px;
-}*/
+}
+  .post-content p {
+    margin-bottom: 50px;
+    text-align: justify;
+    line-height: 1.75;
+  }
 
+.blockquote {
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 20px 10%;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
 
 @media (min-width: 640px) {
 
+  /* HEADER */
   .top-nav-bar {
     display: flex;
     width: 80%;
     max-width: 1000px;
+    margin: 40px auto;
   }
   .nav-center {
     display: inline-block;
@@ -146,17 +172,26 @@ hr {
     display: none;
   }
 
+  /* GENERAL */
   .body{
     width: 80%;
     max-width: 1000px;
     display: inline-block;
   }
 
+  /* HOME CONTAINER*/
   .intro-block {
-    padding: 0 10px;
+    padding: 0 20%;
   }
-
   .post-container {
     padding: 25px;
+  }
+
+  /* POST PAGE */
+  .post-page-title {
+    font-size: 64px;
+  }
+  .post-content{
+    margin: 0;
   }
 }

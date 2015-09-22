@@ -1,0 +1,9 @@
+<div id="_post-section"><!-- Template Container --></div>
+
+<script>
+  // @path is instance variable from rb
+  var path = '<%= @path %>';
+  insertHeader('');
+
+  ajaxInsertTemplate('_post-section', 'post', '/api/posts/'+path);
+</script>
