@@ -1,6 +1,16 @@
+<div class="body">
+
+  <div class="intro-block">
+    Student of web development, amatuer coffee aficionado, longboarder, and hopeless film addict. Raised in Kenya. Schooled in Texas and South Korea. Budding full-stack developer currently seeking opportunities to exercise talent in web development studio.
+  </div>
+
+  <div id="post-section"><!-- Template Container --></div>
+
+</div>
+
 <script>
   data = {title: 'TECHSTER'};
   insertTemplateParsed('header', 'header', data);
-</script>
 
-'Home'
+  ajaxInsertTemplate('post-section', 'post_previews', '/api/posts');
+</script>
