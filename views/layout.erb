@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @tab_title %></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,600,800' rel='stylesheet' type='text/css'>
+  <script src="/js/handlebars.runtime-v4.0.2.js"></script>
+  <script src="/js/utilities.js"></script>
+  <script src="/js/templates.js"></script>
+
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+  <div id="_header"></div>
+
+
+  <div class="body">
+    <%= yield %>
+  </div>
+
+</body>
+</html>
