@@ -1,24 +1,18 @@
 require 'sinatra'
-require 'data_mapper'
 require 'json'
+require 'active_record'
 
 set :port, 12008
 
 # DATABASE
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/posts.db")
+ActiveRecord::Base.establish_connection(
+  :adapter => 'sqlite3',
+  :database =>  'posts.db'
+)
 
-class Post
-  include DataMapper::Resource
-  property :id, Serial
-  property :title, Text, :required => true, :lazy =>false
-  property :author, Text, :lazy =>false
-  property :content, Text, :required => true
-  property :preview, Text, :required => true
-  property :time, DateTime
-  property :path, Text
+class Post < ActiveRecord::Base
 end
 
-DataMapper.finalize.auto_upgrade!
 
 # ROUTING
 get '/' do
@@ -40,6 +34,7 @@ get '/api/posts' do
 end
 
 get '/api/posts/:path' do |p|
-  @post = Post.first(:path => p)
+  @post = Post.find_by path: p
   @post.to_json();
 end
+
