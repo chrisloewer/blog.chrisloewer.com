@@ -1,0 +1,61 @@
+<html><head>
+  <title>Intro To Me</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,600,800" rel="stylesheet" type="text/css">
+  <script src="/js/utilities.js"></script>
+  <script src="/js/templates.js"></script>
+
+  <meta name="viewport" content="width=device-width">
+<style type="text/css"></style></head>
+<body cz-shortcut-listen="true">
+
+  <div id="_header"><!-- NAVIGATION HEADER -->
+<div class="top-nav-bar">
+
+  <div class="nav-left">
+    <a href="index.html">
+      <div class="menu-icon">
+      </div>
+    </a>
+  </div>
+
+  <div class="nav-center">
+    <h1></h1>
+  </div>
+
+  <div class="nav-right">
+    <a href="intro-to-me">
+      <div class="button">
+        ABOUT
+      </div>
+    </a>
+  </div>
+</div>
+
+<h1 class="small-vp-title"></h1>
+</div>
+
+
+  <div class="body">
+    <div id="_post-section"><div class="post-page-title">An Intro&shy;duction to Me</div>
+<div class="post-page-author">by Chris Loewer</div>
+
+<hr>
+
+<div class="post-content">
+  <p>Allow me to introduce myself.  I am a student of web development, amatuer coffee aficionado, longboarder, and hopeless film addict.  I also seem to have this nasty habit of disgusting the East Texans that surround me.  This is a win.</p>
+
+<p>I was born in the USA, but was raised in Kenya, first in Mombasa and then later in Nairobi.  After graduation I moved to Longview, TX.  I've worked all over the US, studied abroad in South Korea, and even circumnavigated the globe.  My bucket list includes backpacking through Europe, rafting the Nile, and running with the bulls in Pamplona in true Hemingway fashion.</p>
+
+<div class="blockquote">Raised in Kenya, first in Mombasa and then later in Nairobi</div>
+
+<p>As senior year at LeTourneau University unfolds I have had the chance to work on some really cool projects, both as part of school and independently.  Enough people have asked me how I did X project or wrote Y code that I decided to create this blog as a platform to share some of what I've been up to.  I mean for this blog to catalog my technical adventures into the unknown.  Hopefully it's helpful, and maybe even a little bit interesting.</p>
+</div>
+</div>
+
+
+ </div>
+
+
+
+</body></html>
