@@ -2,7 +2,8 @@ require 'sinatra'
 require 'json'
 require 'active_record'
 
-set :port, 12008
+set :port, 12568
+set :environment, :production
 
 # DATABASE
 ActiveRecord::Base.establish_connection(
