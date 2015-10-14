@@ -2,7 +2,8 @@ require 'sinatra'
 require 'data_mapper'
 require 'json'
 
-set :port, 12008
+set :port, 12568
+set :environment, :production
 
 # DATABASE
 DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/posts.db")
