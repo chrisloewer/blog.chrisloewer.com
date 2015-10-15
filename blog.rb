@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'json'
-require 'active_record'
+require 'data_mapper'
+require 'tilt/erb'
 
 set :port, 12568
 set :environment, :production
