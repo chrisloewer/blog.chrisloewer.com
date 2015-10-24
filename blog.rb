@@ -6,6 +6,7 @@ require 'tilt/erb'
 set :port, 12568
 set :environment, :production
 
+
 # DATABASE
 DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/posts.db")
 
@@ -51,3 +52,36 @@ get '/blog/api/posts/:path' do |p|
   @post.to_json();
 end
 
+
+# SERVE STATIC FILES (js, images, etc)
+
+# Configure mime types
+configure do
+  mime_type :js, 'application/javascript'
+end
+configure do
+  mime_type :svg, 'image/svg+xml'
+end
+
+# Actually read in static file
+def js(f)
+  File.read(File.join('public/js', "#{f.to_s}"))
+end
+def svg(f)
+  puts 'svg'
+  File.read(File.join('public/img', "#{f.to_s}"))
+end
+
+# paths to catch static files
+get '/blog/js/*' do |file|
+  content_type :js
+  js file
+end
+
+get '/blog/img/*.*' do |file, ext|
+  if ext == 'svg'
+    puts 'SVG'
+    content_type :svg
+    svg(file + '.' + ext)
+  end
+end

@@ -57,7 +57,7 @@ hr {
 
 .menu-icon {
   position: relative;
-  background: url(menu.svg) center center no-repeat;
+  background: url(/blog/img/menu.svg) center center no-repeat;
   background-size: contain;
   background-origin: content-box;
   width: 40px;
