@@ -146,6 +146,9 @@ hr {
     text-align: justify;
     line-height: 1.75;
   }
+  .post-content a {
+    text-decoration: underline;
+  }
 
 .blockquote {
   margin-bottom: 50px;
