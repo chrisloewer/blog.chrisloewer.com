@@ -40,7 +40,7 @@ end
 
 # APIs
 get '/api/posts' do
-  @posts = Post.all
+  @posts = Post.all(:order => [:id.desc])
   @posts.to_json()
 end
 
